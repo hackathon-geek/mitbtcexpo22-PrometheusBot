@@ -1,14 +1,14 @@
 FROM python
 
 EXPOSE 5000
-VOLUME ["/app"]
 
+COPY ../robots /app
 WORKDIR /app
 
 RUN pip install flask
 RUN pip install requests
 
-COPY ../client/robots/.venv /venv
+COPY ../robots/.venv /venv
 RUN . /venv/bin/activate
 
 ENV FLASK_APP=flaskr

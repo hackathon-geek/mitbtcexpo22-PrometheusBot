@@ -1,13 +1,13 @@
 FROM node
 
 EXPOSE 8080
-VOLUME ["/app"]
 
+COPY ../mitbtcexpo22-nft-wrapper/app /app
 WORKDIR /app
 
-RUN npm i web3
-RUN npm i solc@0.8.4
-RUN npm i @openzeppelin/contracts
-RUN npm i cors
+RUN npm install web3
+RUN npm install solc@0.8.4
+RUN npm install @openzeppelin/contracts
+RUN npm install cors
 
 CMD npm run start

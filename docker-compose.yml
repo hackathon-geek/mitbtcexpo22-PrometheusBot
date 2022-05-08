@@ -3,19 +3,13 @@ services:
   robots_frontend_container:
     build:
       context: ..
-      dockerfile: docker-compose/robots_frontend.Dockerfile
-    # image: robots_frontend
+      dockerfile: mitbtcexpo22-PrometheusBot/robots_frontend.Dockerfile
     ports:
       - "5000:5000"
-    volumes:
-      - ../client/robots:/app
 
   moonbeam_wrapper_container:
     build:
       context: ..
-      dockerfile: docker-compose/moonbeam_wrapper.Dockerfile
-    # image: moonbeam_wrapper
+      dockerfile: mitbtcexpo22-PrometheusBot/moonbeam_wrapper.Dockerfile
     ports:
       - "8080:8080"
-    volumes:
-      - ../server-moonbeam-wrapper/app:/app
