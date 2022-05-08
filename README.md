@@ -33,6 +33,13 @@ docker-compose up
 This step may take a few seconds.
 ```
 
+# Future Work
+- Pull random image for NFT generation
+- Implement cryptocurrency payments
+- Deploy on public IP address
+  - Update configurations / hardcodes
+  - Cloud service provider
+
 # Quick References
 - [docker-compose file reference](
 https://docs.docker.com/compose/compose-file) 
