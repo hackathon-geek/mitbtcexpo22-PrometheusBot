@@ -24,6 +24,15 @@ docker-compose build
 docker-compose up
 ```
 
+## Test
+- Go to [localhost:5000](http://localhost:5000/)
+- Open developer tools
+- Complete flow
+- You should see `siaId` and `txId` in developer console.
+```info
+This step may take a few seconds.
+```
+
 # Quick References
 - [docker-compose file reference](
 https://docs.docker.com/compose/compose-file) 
